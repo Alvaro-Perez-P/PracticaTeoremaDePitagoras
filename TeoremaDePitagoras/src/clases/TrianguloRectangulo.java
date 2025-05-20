@@ -29,10 +29,12 @@ public class TrianguloRectangulo {
 	}
 	/**
 	 * 
-	 * @return devuelve la hipotenusa de el triangulo
+	 * @return devuelve la hipotenusa de el triangulo con dos decimales
 	 */
-	private double hipotenusa() {
+	public double hipotenusa() {
 		double c = Math.sqrt((a*a) + b*b);
+		c=Math.round(c*100)/100;
+		
 		return c;
 	}
 	/**
